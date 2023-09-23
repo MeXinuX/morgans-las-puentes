@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -91,4 +92,60 @@ body{
 
 .header .nav-links a.active {
     color: #fc6625; /* Cambia el color del texto en la página activa */
+}
+
+.imagen-contenedor {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+/* Contenedor principal de las imágenes */
+.imagenes-container {
+    display: flex; /* Muestra las imágenes en línea horizontalmente */
+    border-radius: 10px;
+}
+
+.imagen-contenedor {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.imagen-contenedor img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Redondea los bordes de la imagen */
+}
+
+.imagen-contenedor:hover img {
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
+
+.texto-desplegable {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    padding: 1px;
+    box-sizing: border-box;
+    font-size: 12px; /* Reducir el tamaño de fuente según tus necesidades */
+}
+
+
+.imagen-contenedor:hover .texto-desplegable {
+    transform: translateY(0);
+    border-radius: 10px;
 }
