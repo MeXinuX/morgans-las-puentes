@@ -72,7 +72,7 @@ body{
     color: #fc6625;
 }
 
-.header .btn button{
+.header .btn button {
     font-weight: 700;
     color: #1b3039;
     padding: 9px 25px;
@@ -91,4 +91,28 @@ body{
 
 .header .nav-links a.active {
     color: #fc6625; /* Cambia el color del texto en la página activa */
+}
+
+.btn{
+    margin-top: 10px;
+    font-weight: 700;
+    color: #1b3039;
+    padding: 9px 25px;
+    background: #eceff1;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.btn:hover{
+      background-color: #e2f1f8;
+      color: #fc6625;
+  }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
