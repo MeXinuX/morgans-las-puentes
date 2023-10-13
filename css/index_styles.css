@@ -94,7 +94,7 @@ body{
 }
 
 /* Estilos generales que se aplicarán en todas las pantallas */
-/* ... Tu CSS existente ... */
+
 
 /* Media Query para pantallas más pequeñas, como tabletas y teléfonos */
 @media (max-width: 768px) {
@@ -124,4 +124,22 @@ body{
     .header .nav-links {
         font-size: 18px;
     }
+}
+
+.galeria-comida{
+    display: flex;
+    width: auto;
+    height: 300px;
+}
+.galeria-comida img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease;
+}
+.galeria-comida img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
 }
