@@ -94,6 +94,36 @@ body{
     color: #fc6625; /* Cambia el color del texto en la página activa */
 }
 
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    .header .nav-links {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .header .nav-links li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .header .btn {
+        text-align: center;
+    }
+}
+
+/* Media Query para pantallas aún más pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .header .nav-links {
+        font-size: 18px;
+    }
+}
+
+
 .imagen-contenedor {
     position: relative;
     width: 300px;
