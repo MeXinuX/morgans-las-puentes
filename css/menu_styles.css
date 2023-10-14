@@ -123,41 +123,43 @@ body{
     }
 }
 
-
-.imagen-contenedor {
-    position: relative;
-    width: 300px;
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.3s ease-in-out;
-    margin: 20px;
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto centra verticalmente en toda la altura del viewport */
+    text-align: center; /* Centra el texto horizontalmente */
 }
 
-/* Contenedor principal de las imágenes */
+/* Tus estilos para .header, .imagenes-container, .imagen-contenedor, y .texto-desplegable aquí... */
+
+
+
 .imagenes-container {
-    display: flex; /* Muestra las imágenes en línea horizontalmente */
-    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra horizontalmente los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
 }
 
 .imagen-contenedor {
-    position: relative;
     width: 300px;
+    margin: 20px;
+    border-radius: 10px;
     overflow: hidden;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    margin: 20px;
-    border-radius: 10px;
+    display: inline-block;
+    position: relative;
 }
 
 .imagen-contenedor img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Redondea los bordes de la imagen */
-}
-
-.imagen-contenedor:hover img {
-    transform: translateY(-50%);
     border-radius: 10px;
+    display: block; /* Asegura que la imagen esté centrada horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
 
 .texto-desplegable {
@@ -169,13 +171,18 @@ body{
     color: #fff;
     transform: translateY(100%);
     transition: transform 0.3s ease-in-out;
-    padding: 1px;
+    padding: 5px;
     box-sizing: border-box;
-    font-size: 12px; /* Reducir el tamaño de fuente según tus necesidades */
+    font-size: 12px;
+    opacity: 0;
 }
 
+.imagen-contenedor:hover img {
+    transform: translateY(-50%);
+    border-radius: 10px;
+}
 
 .imagen-contenedor:hover .texto-desplegable {
     transform: translateY(0);
-    border-radius: 10px;
+    opacity: 1;
 }
