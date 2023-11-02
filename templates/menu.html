@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgans Las Puentes</title>
+    <link rel="icon" href="{% static '/icons/LogoMorgansVectores.svg' %}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu_styles.css' %}">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{%static '/icons/LogoMorgansVectores.svg'%} " alt="Logo morgans las puentes">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'menu'%}" class="active">Menú</a></li>
+                <li><a href="{% url 'sucursales'%}">Sucursales</a></li>
+                <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="{% url 'unete' %}"><button>ÚNETE A NOSOTROS</button></a>
+    </header>
+
+<div class="imagen-contenedor">
+    <img src="{%static "./img/menu img/burger d'tocino.jpg"%}" alt="Burguer D'Tocino">
+    <div class="texto-desplegable">
+        <p>Carne 100% de res, tocino dorado y aderezo chipotle ranch, tierno pan de brioche, lechuga crujiente, tomate
+            maduro, cebolla morada y pepinillos.</p>
+    </div>
+</div>
+
+<div class="imagen-contenedor">
+    <img src="{%static './img/menu img/burger champ.jpg'%}" alt="Burguer Champ">
+    <div class="texto-desplegable">
+        <p>Carne de res,guiso de champiñones, cebolla morada caramelizada en mantequilla,tierno pan de brioche, lechuga
+            crujiente, tomate maduro, cebolla morada y pepinillos.</p>
+    </div>
+</div>
+
+<div class="imagen-contenedor">
+    <img src="{%static './img/menu img/torta de pierna.'%}jpg" alt="Torta De Pierna">
+    <div class="texto-desplegable">
+        <p>Elaborada con pierna de cerdo, esta torta se sirve en un tierno pan de original de torta, acompañada de
+            lechuga crujiente y tomate maduro.</p>
+    </div>
+</div>
+
+<div class="imagen-contenedor">
+    <img src="{%static './img/menu img/torta de pierna.'%}jpg" alt="Torta De Pierna">
+    <div class="texto-desplegable">
+        <p>Elaborada con pierna de cerdo, esta torta se sirve en un tierno pan de original de torta, acompañada de
+            lechuga crujiente y tomate maduro.</p>
+    </div>
+</div>
+
+<div class="imagen-contenedor">
+    <img src="{%static './img/menu img/torta de pierna.jpg'%}" alt="Torta De Pierna">
+    <div class="texto-desplegable">
+        <p>Elaborada con pierna de cerdo, esta torta se sirve en un tierno pan de original de torta, acompañada de
+            lechuga crujiente y tomate maduro.</p>
+    </div>
+</div>
+
+
+
+</body>
+</html>
