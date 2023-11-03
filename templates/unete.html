@@ -50,27 +50,25 @@
             <tr>
                 <td colspan="2">
                     <label for="puesto"><b>Puesto para el que está aplicando *</b></label><br/>
-                    <input list="Puestos" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
-                    <datalist id="Puestos">
-                        <option value="Cocinero">
-                        <option value="Ayudante De Cocina">
-                        <option value="Cajero">
-                        <option value="Mesero">
-                        <option value="Mantenimiento">
-                    </datalist>
+                    <select id="Puestos" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;background-color: white; "/>
+                        <option value="Cocinero">Cocinero</option>
+                        <option value="Ayudante De Cocina">Ayudante De Cocina</option>
+                        <option value="Cajero">Cajero</option>
+                        <option value="Mesero">Mesero</option>
+                        <option value="Mantenimiento">Mantenimiento</option>
+                    </select>
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="Salario"><b>Salario Deseado*</b></label><br/>
-                    <input list="Salario" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
-                    <datalist id="Salario">
-                        <option value="$ 6,000 - 8,000">
-                        <option value="$ 8,000 - 10,000">
-                        <option value="$ 10,000 - 12,000">
-                        <option value="$ 12,000 - 14,000">
-                        <option value="$ 14,000 - 16,000">
-                    </datalist>
+                    <select name='Salarios'id="Salario" maxlength="100" style="width:90%;max-width: 535px;border-radius: 10px;background-color: white; ">
+                        <option value="$ 6,000 - 8,000">$ 6,000 - 8,000</option>
+                        <option value="$ 8,000 - 10,000">$ 8,000 - 10,000</option>
+                        <option value="$ 10,000 - 12,000">$ 10,000 - 12,000</option>
+                        <option value="$ 12,000 - 14,000">$ 12,000 - 14,000</option>
+                        <option value="$ 14,000 - 16,000">$ 14,000 - 16,000</option>
+                    </select>
                 </td>
                 <td>
                     <label for="disponibilidad"><b>¿Cuándo puede empezar?</b></label><br/>

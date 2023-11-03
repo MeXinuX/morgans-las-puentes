@@ -73,9 +73,9 @@ body{
 }
 
 .header .btn button {
-    font-weight: 700;
+    font-weight: 100;
     color: #1b3039;
-    padding: 9px 25px;
+    padding: 8px 15px;
     background: #eceff1;
     border: none;
     border-radius: 50px;
@@ -125,9 +125,9 @@ body{
 
 .btn{
     margin-top: 10px;
-    font-weight: 700;
+    font-weight: 900;
     color: #1b3039;
-    padding: 9px 25px;
+    padding: 5px 15px;
     background: #eceff1;
     border: none;
     border-radius: 50px;
