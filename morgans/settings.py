@@ -56,7 +56,7 @@ ROOT_URLCONF = 'morgans.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['/home/mexinux/Documents/Django-Morgans/morgans/templates'],
+        'DIRS': [os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
