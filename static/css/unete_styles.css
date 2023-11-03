@@ -13,6 +13,7 @@ body{
 }
 
 .header{
+    margin-bottom: 50px;
     background-color: #1b3039;
     display: flex;
     justify-content: space-between;
@@ -141,8 +142,23 @@ body{
 }
 
 .center {
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+form {
+    max-width: 100%;
+}
+
+
+label {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
 }
