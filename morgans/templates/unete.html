@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgans Las Puentes</title>
+    <link rel="icon" href="{% static '/icons/LogoMorgansVectores.svg' %}" type="image/png">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/unete_styles.css' %}">
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="{%static '/icons/LogoMorgansVectores.svg'%} " alt="Logo morgans las puentes">
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                <li><a href="{% url 'menu'%}">Menú</a></li>
+                <li><a href="{% url 'sucursales'%}">Sucursales</a></li>
+                <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
+            </ul>
+        </nav>
+        <a class="btn" href="{% url 'unete' %}"><button>Limpiar</button></a>
+    </header>
+
+</header>
+<div class="center">
+    <form action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+        <table style="border-collapse: collapse">
+            <tr>
+                <td style="width: 50%">
+                    <label for="nombres"><b>Nombre(s) *</b></label><br/>
+                    <input id="nombres" type="text" maxlength="50" style="width:90%;max-width: 260px;border-radius: 10px;"/>
+                </td>
+                <td style="width: 50%">
+                    <label for="apellidos"><b>Apellidos *</b></label><br/>
+                    <input id="apellidos" type="text" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="email"><b>Email *</b></label><br/>
+                    <input id="email" type="email" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="puesto"><b>Puesto para el que está aplicando *</b></label><br/>
+                    <select id="Puestos" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;background-color: white; "/>
+                        <option value="Cocinero">Cocinero</option>
+                        <option value="Ayudante De Cocina">Ayudante De Cocina</option>
+                        <option value="Parrillero">Parrillero</option>
+                        <option value="Mesero">Mesero</option>
+                        <option value="Ayudante General">Ayudante General</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Salario"><b>Salario Deseado*</b></label><br/>
+                    <select name='Salarios'id="Salario" maxlength="100" style="width:90%;max-width: 535px;border-radius: 10px;background-color: white; ">
+                        <option value="$ 6,000 - 8,000">$ 6,000 - 8,000</option>
+                        <option value="$ 8,000 - 10,000">$ 8,000 - 10,000</option>
+                        <option value="$ 10,000 - 12,000">$ 10,000 - 12,000</option>
+                        <option value="$ 12,000 - 14,000">$ 12,000 - 14,000</option>
+                        <option value="$ 14,000 - 16,000">$ 14,000 - 16,000</option>
+                    </select>
+                </td>
+                <td>
+                    <label for="disponibilidad"><b>¿Cuándo puede empezar?</b></label><br/>
+                    <input type="date" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="telefono_movil"><b>Teléfono Movil*</b></label><br/>
+                    <input id="telefono_movil" type="tel" maxlength="50" style="width:90%;max-width: 260px;border-radius: 10px;"/>
+                </td>
+                <td>
+                    <label for="telefono_fijo"><b>Teléfono Fijo</b></label><br/>
+                    <input id="telefono_fijo" type="tel" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;"/>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <label for="ultimo_trabajo"><b>Ultima compañia con la que trabajaste</b></label><br/>
+                    <input id="ultimo_trabajo" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="referencias"><b>Referencias / Comentarios / Dudas</b></label><br/>
+                    <textarea id="referencias" rows="7" cols="40" style="width:100%;max-width: 535px;border-radius: 10px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="curriculum">Curriculum:</label>
+                    <input type="file" name="curriculum" id="curriculum">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <button class="btn" type="submit">Enviar Datos</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
