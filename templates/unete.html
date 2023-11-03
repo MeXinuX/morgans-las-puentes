@@ -23,7 +23,7 @@
                 <li><a href="{% url 'nosotros'%}">Nosotros</a></li>
             </ul>
         </nav>
-        <a class="btn" href="{% url 'unete' %}"><button>ÚNETE A NOSOTROS</button></a>
+        <a class="btn" href="{% url 'unete' %}"><button>Limpiar</button></a>
     </header>
 
 </header>
@@ -33,57 +33,71 @@
             <tr>
                 <td style="width: 50%">
                     <label for="nombres"><b>Nombre(s) *</b></label><br/>
-                    <input id="nombres" type="text" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <input id="nombres" type="text" maxlength="50" style="width:90%;max-width: 260px;border-radius: 10px;"/>
                 </td>
                 <td style="width: 50%">
                     <label for="apellidos"><b>Apellidos *</b></label><br/>
-                    <input id="apellidos" type="text" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <input id="apellidos" type="text" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;"/>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <label for="email"><b>Email *</b></label><br/>
-                    <input id="email" type="email" maxlength="100" style="width:100%;max-width: 535px"/>
+                    <input id="email" type="email" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="2">
                     <label for="puesto"><b>Puesto para el que está aplicando *</b></label><br/>
-                    <input id="puesto" type="text" maxlength="100" style="width:100%;max-width: 535px"/>
+                    <input list="Puestos" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
+                    <datalist id="Puestos">
+                        <option value="Cocinero">
+                        <option value="Ayudante De Cocina">
+                        <option value="Cajero">
+                        <option value="Mesero">
+                        <option value="Mantenimiento">
+                    </datalist>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for="salario"><b>Salario deseado</b></label><br/>
-                    <input id="salario" type="text" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <label for="Salario"><b>Salario Deseado*</b></label><br/>
+                    <input list="Salario" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 10px;"/>
+                    <datalist id="Salario">
+                        <option value="$ 6,000 - 8,000">
+                        <option value="$ 8,000 - 10,000">
+                        <option value="$ 10,000 - 12,000">
+                        <option value="$ 12,000 - 14,000">
+                        <option value="$ 14,000 - 16,000">
+                    </datalist>
                 </td>
                 <td>
                     <label for="disponibilidad"><b>¿Cuándo puede empezar?</b></label><br/>
-                    <input id="disponibilidad" type="text" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <input type="date" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;">
                 </td>
             </tr>
             <tr>
                 <td>
                     <label for="telefono_movil"><b>Teléfono Movil*</b></label><br/>
-                    <input id="telefono_movil" type="tel" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <input id="telefono_movil" type="tel" maxlength="50" style="width:90%;max-width: 260px;border-radius: 10px;"/>
                 </td>
                 <td>
                     <label for="telefono_fijo"><b>Teléfono Fijo</b></label><br/>
-                    <input id="telefono_fijo" type="tel" maxlength="50" style="width:100%;max-width: 260px"/>
+                    <input id="telefono_fijo" type="tel" maxlength="50" style="width:100%;max-width: 260px;border-radius: 10px;"/>
                 </td>
             </tr>
 
             <tr>
                 <td colspan="2">
                     <label for="ultimo_trabajo"><b>Ultima compañia con la que trabajaste</b></label><br/>
-                    <input id="ultimo_trabajo" type="text" maxlength="100" style="width:100%;max-width: 535px"/>
+                    <input id="ultimo_trabajo" type="text" maxlength="100" style="width:100%;max-width: 535px;border-radius: 20px;"/>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
                     <label for="referencias"><b>Referencias / Comentarios / Dudas</b></label><br/>
-                    <textarea id="referencias" rows="7" cols="40" style="width:100%;max-width: 535px"></textarea>
+                    <textarea id="referencias" rows="7" cols="40" style="width:100%;max-width: 535px;border-radius: 10px;"></textarea>
                 </td>
             </tr>
             <tr>
@@ -94,7 +108,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <button class="btn" type="submit">ÚNETE A NOSOTROS</button>
+                    <button class="btn" type="submit">Enviar Datos</button>
                 </td>
             </tr>
         </table>

@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Rough_Battle';
-    src: url('{% static "Fonts/rough_battle" %}') format('truetype');
+    src: url('{%static "/Fonts/rough_battle" %}') format('truetype');
 }
 
 
@@ -136,6 +136,7 @@ h1{
 }
 
 section h2{
+    font-family: 'Rough_Battle', sans-serif;
     font-size: 40px;
     text-align: center;
     color: blue;
