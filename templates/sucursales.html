@@ -8,7 +8,7 @@
     <title>Morgans Las Puentes</title>
     <link rel="icon" href="{% static '/icons/LogoMorgansVectores.svg' %}" type="image/png">
     <link rel="stylesheet" type="text/css" href="{% static 'css/sucursales_styles.css' %}">
-
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
@@ -26,15 +26,15 @@
         <a class="btn" href="{% url 'unete' %}"><button>ÚNETE A NOSOTROS</button></a>
     </header>
     <section class="sucursal-section">
-        <h1>SUCURSALES</h1>
-        <h2>SAN NICOLAS DE LOS GARZA</h2>
+        <h1 class="titulo-sucursal" >SUCURSALES</h1>
+        <h2 class="encabezado-sucursal" >SAN NICOLAS DE LOS GARZA</h2>
         <div class="sucursal-info">
             <div class="sucursal-image">
                 <img src="{%static '/img/sucursales img/Sucursal_San_Nicolas.jpg'%}" alt="Imagen Sucursal SNG" class="imagenes-sucursales">
                 <img src="{%static '/img/sucursales img/Sucursal SN 2.jpg'%}" alt="Imagen Sucursal SN 2" class="imagenes-sucursales">
             </div>
             <div class="sucursal-details">
-                <h2>Horarios de Atención</h2>
+                <h2 class="encabezado-sucursal">Horarios de Atención</h2>
                 <ul>
                     <li><strong>Viernes:</strong> 5:00 p. m. - 10:45 p. m.</li>
                     <li><strong>Sábado:</strong> 1:00 p. m. - 10:45 p. m.</li>
@@ -43,15 +43,19 @@
                     <li><strong>Martes:</strong> Cerrado</li>
                     <li><strong>Miércoles:</strong> 5:00 p. m. - 10:15 p. m.</li>
                     <li><strong>Jueves:</strong> 5:00 p. m. - 10:15 p. m.</li>
-                </ul>
-                <a href="https://www.facebook.com/MorgansLasPuentes">SIGUENOS EN FACEBOOK!</a>
+                <div class="iconos">
+                    <ul>
+                        <li class="facebook"><a href="https://www.facebook.com/MorgansLasPuentes"><i class="fa fa-facebook fa-2x" aria-hidden="true"></i></a></li>
+                        <li class="whatsapp"><a href="https://wa.me/8121417503"><i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28750.56935649969!2d-100.2839300830755!3d25.743426827457878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x866294eda679c21d%3A0x27e3d5e144164e90!2sMorgans%20%22Las%20Puentes%22!5e0!3m2!1ses-419!2smx!4v1695421146190!5m2!1ses-419!2smx" width="845" height="600" style="border:0;" class= "mapa" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <div class="nombre-franja">
-        <p>Created by Eiber Torres</p>
-    </div>
+    <footer class="nombre-franja">
+        <p>Todos los derechos reservados 2023.</p>
+    </footer>
 </body>
 </html>

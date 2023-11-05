@@ -1,16 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap'); 
 
-@font-face {
+/* @font-face {
     font-family: 'Rough_Battle';
-    src: url('{%static "/rough_battle" %}') format('truetype');
+    src: url('/static/rough_battle.ttf') format('truetype');
+} */
+ 
+@font-face {
+    font-family: 'RoughBattle';
+    src: url('{% static "Fonts/rough_battle/Rough_Battle.ttf" %}') format('truetype');
 }
-
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rough_Battle', sans-serif;
     font-size: 20px;
 }
 
@@ -119,6 +123,10 @@ body{
     .header .btn {
         text-align: center;
     }
+    .mapa{
+        width: 100%;
+    }
+
 }
 
 /* Media Query para pantallas aún más pequeñas, como teléfonos móviles */
@@ -126,13 +134,16 @@ body{
     .header .nav-links {
         font-size: 18px;
     }
+    .mapa{
+        width: 100%;
+    }
 }
 
 
 section h1{
     display: flex;
     font-family: 'Rough_Battle', sans-serif;
-    font-size:60px;
+    font-size:2.5rem;
     text-align: center;
 }
 
@@ -140,7 +151,6 @@ section h2{
     font-family: 'Rough_Battle', sans-serif;
     font-size: 40px;
     text-align: center;
-    color: blue;
 }
 
 .sucursal-section {
@@ -148,9 +158,16 @@ section h2{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
+.titulo-sucursal{
+    color:#1b3039;
+}
+
+.encabezado-sucursal{
+    color:#fc6625;
+}
 
 .sucursal-image img {
     max-width: 100%;
@@ -186,17 +203,57 @@ section h2{
     margin-bottom: 10px;
 }
 
-.nombre-franja {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 10px 0;
+.iconos {
+    text-align: center; /* Centra los iconos horizontalmente */
 }
 
+.iconos ul {
+    list-style: none;
+    padding: 0;
+}
 
+.iconos li {
+    display: inline-block;
+    margin: 0 10px; /* Espacio entre los iconos */
+}
+
+.iconos a {
+    display: block;
+    width: 50px; /* Tamaño del círculo */
+    height: 50px; /* Tamaño del círculo */
+    border-radius: 50%; 
+    background-color: black;
+    color: white;
+    text-align: center; /* Centra el contenido verticalmente */
+    line-height: 65px; /* Centra el contenido verticalmente */
+    text-decoration: none;
+    transition: background-color 0.3s; 
+}
+
+.iconos .whatsapp a:hover {
+    background-color: green; 
+}
+
+.iconos .facebook a:hover {
+    background-color: blue; 
+}
 .mapa {
-    border-radius: 20px; /* Ajusta el valor de border-radius según la cantidad de curvatura que desees */
-    overflow: hidden; /* Asegura que el contenido del mapa no se desborde de los bordes redondeados */
+    border-radius: 20px;
+    overflow: hidden; /
 }
+.nombre-franja {
+    bottom: 0;
+    left: 0;
+    position: relative;
+    width: 100%;
+    background-color: white; 
+    color: black; 
+    text-align: center;
+    font-size: 10px;
+    line-height: 50px;
+}
+
+
+
 
 
