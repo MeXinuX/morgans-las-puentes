@@ -8,6 +8,7 @@
     <title>Morgans Las Puentes</title>
     <link rel="icon" href="{% static '/icons/LogoMorgansVectores.svg' %}" type="image/png">
     <link rel="stylesheet" type="text/css" href="{% static 'css/unete_styles.css' %}">
+    <script src="{% static '/js/unete.js' %}"></script>
 
 </head>
 <body>
@@ -28,7 +29,7 @@
 
 </header>
 <div class="center">
-    <form style='max-width: 100%;'action="//submit.form" id="EmploymentApplication100" method="post" onsubmit="return ValidateForm(this);">
+    <form style='max-width: 100%;' id="EmploymentApplication100">
         <table style="border-collapse: collapse">
             <tr>
                 <td>
@@ -49,8 +50,8 @@
 
             <tr>
                 <td colspan="2">
-                    <label for="puesto"><b>Puesto para el que está aplicando *</b></label><br/>
-                    <select id="Puestos" maxlength="100" style="width:100%;max-width: 507px;border-radius: 10px;background-color: white; "/>
+                    <label for="Puestos"><b>Puesto para el que está aplicando *</b></label><br/>
+                    <select id="Puestos" maxlength="100" style="width:100%;max-width: 507px;border-radius: 10px;background-color: white; ">
                         <option value="Cocinero">Cocinero</option>
                         <option value="Ayudante De Cocina">Ayudante De Cocina</option>
                         <option value="Parrillero">Parrillero</option>
@@ -62,7 +63,7 @@
             <tr>
                 <td>
                     <label for="Salario"><b>Salario Deseado*</b></label><br/>
-                    <select name='Salarios'id="Salario" maxlength="100" style="width:100%;max-width: 250px;border-radius: 10px;background-color: white; ">
+                    <select name='Salarios' id="Salario" maxlength="100" style="width:100%;max-width: 250px;border-radius: 10px;background-color: white; ">
                         <option value="$ 6,000 - 8,000">$ 6,000 - 8,000</option>
                         <option value="$ 8,000 - 10,000">$ 8,000 - 10,000</option>
                         <option value="$ 10,000 - 12,000">$ 10,000 - 12,000</option>
@@ -72,7 +73,7 @@
                 </td>
                 <td>
                     <label for="disponibilidad"><b>¿Cuándo puede empezar?</b></label><br/>
-                    <input type="date" maxlength="50" style="width:100%;max-width: 250px;border-radius: 10px;">
+                    <input id="disponibilidad" type="date" maxlength="50" style="width:100%;max-width: 250px;border-radius: 10px;">
                 </td>
             </tr>
             <tr>
@@ -88,7 +89,7 @@
 
             <tr>
                 <td colspan="2">
-                    <label for="ultimo_trabajo"><b>Ultima compañia con la que trabajaste</b></label><br/>
+                    <label for="ultimo_trabajo"><b>Última compañia con la que trabajaste</b></label><br/>
                     <input id="ultimo_trabajo" type="text" maxlength="100" style="width:100%;max-width: 507px;border-radius: 10px;"/>
                 </td>
             </tr>
@@ -106,7 +107,7 @@
             </tr>
             <tr>
                 <td colspan="2" style="text-align: center;">
-                    <button class="btn" type="submit">Enviar Datos</button>
+                    <button class="btn" onclick="myFunction()">Enviar Datos</button>
                 </td>
             </tr>
         </table>
