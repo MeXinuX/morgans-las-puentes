@@ -1,10 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
 
-/* @font-face {
-    font-family: 'Rough_Battle';
-    src: url('/static/rough_battle.ttf') format('truetype');
-} */
- 
 @font-face {
     font-family: 'RoughBattle';
     src: url('{% static "Fonts/rough_battle/Rough_Battle.ttf" %}') format('truetype');
@@ -227,27 +222,33 @@ section h2{
     text-align: center; /* Centra el contenido verticalmente */
     line-height: 65px; /* Centra el contenido verticalmente */
     text-decoration: none;
-    transition: background-color 0.3s; 
+    transition: background-color 0.3s;
 }
 
 .iconos .whatsapp a:hover {
-    background-color: green; 
+    background-color: green;
 }
 
 .iconos .facebook a:hover {
-    background-color: blue; 
+    background-color: blue;
 }
+
+.iconos .instagram a:hover {
+    background-color: magenta;
+}
+
 .mapa {
     border-radius: 20px;
     overflow: hidden; /
 }
+
 .nombre-franja {
     bottom: 0;
     left: 0;
     position: relative;
     width: 100%;
-    background-color: white; 
-    color: black; 
+    background-color: white;
+    color: black;
     text-align: center;
     font-size: 10px;
     line-height: 50px;
