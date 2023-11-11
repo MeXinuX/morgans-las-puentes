@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Rock+Salt&display=swap');
 
 @font-face {
     font-family: 'RoughBattle';
@@ -137,13 +138,13 @@ body{
 
 section h1{
     display: flex;
-    font-family: 'Rough_Battle', sans-serif;
+    font-family: 'Rock Salt';
     font-size:2.5rem;
     text-align: center;
 }
 
 section h2{
-    font-family: 'Rough_Battle', sans-serif;
+    font-family: 'Rock Salt';
     font-size: 40px;
     text-align: center;
 }

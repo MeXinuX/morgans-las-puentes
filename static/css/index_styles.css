@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Rock+Salt&display=swap');
 
 *{
     box-sizing: border-box;
@@ -10,6 +11,15 @@
 
 body{
     background-color: #fff59d;
+    justify-content: center;
+    align-content: center;
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Rock Salt';
+    color:#1b3039;
 }
 
 .header{
@@ -142,4 +152,24 @@ body{
     width: 500px;
     opacity: 1;
     filter: brightness(130%);
+}
+
+.container
+{
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.container img
+{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block; /* Asegura que la imagen esté centrada horizontalmente */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
 }
