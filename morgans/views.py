@@ -14,3 +14,6 @@ def nosotros(request):
 
 def unete(request):
     return render(request, 'unete.html')
+
+def login(request):
+    return render(request, 'login.html')
